@@ -170,14 +170,6 @@ body {
   gap: 10px;
 }
 
-/* Optional: Customize your arrows */
-.my-arrow {
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
-  cursor: pointer;
-}
-
 .owl-nav button:hover,
 .owl-nav button:focus {
   background: none !important;
@@ -186,16 +178,15 @@ body {
 }
 
 .custom-nav-btn {
-font-size: 25px;
+  font-size: 25px;
 }
-
 
 .feature-bg {
   top: 10%;
   left: 1%;
   z-index: -1;
 }
- 
+
 .introduction-bg {
   top: 70%;
   right: 0%;

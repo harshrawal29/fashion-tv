@@ -4,11 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FTV Bar</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
-   
+    <style>
+      /* Progress Bar + Counter */
+      .progress-bar-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+      }
+
+      .progress-bar-container {
+        width: 20%;
+        height: 3px;
+        background: #fff;
+        margin-right: 10px;
+      }
+
+      .progress-bar-fill {
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          #dab157 0%,
+          #dab157 10%,
+          #dab157 20%,
+          #feecac 30%,
+          #fee499 40%,
+          #ffd777 50%,
+          #d9af63 60%,
+          #b78c3d 70%,
+          #936b25 80%,
+          #795315 100%
+        );
+        width: 0%;
+        transition: width 0.4s ease;
+      }
+
+      .slide-counter {
+        white-space: nowrap;
+        min-width: 40px;
+        font-size: 14px;
+        color: #666;
+      }
+
+      .owl-nav button.owl-prev,
+      .owl-nav button.owl-next {
+        all: unset;
+      }
+    </style>
   </head>
   <body>
     <!-- header -->
@@ -56,7 +103,6 @@
     </header>
 
     <main>
-
       <section class="hero-img">
         <div class="container-fluid px-0">
           <img
@@ -72,7 +118,8 @@
         <div class="container-fluid px-md-0 mt-3 mb--md-5 mb-5 px-4">
           <div class="row w-100 d-flex">
             <div
-              class="col-md-5 d-flex align-items-center justify-content-center">
+              class="col-md-5 d-flex align-items-center justify-content-center"
+            >
               <img
                 src="assets/img/introduction.png"
                 alt="Introduction"
@@ -111,8 +158,6 @@
         />
       </section>
 
-      
-
       <!-- Our Features -->
       <section id="features" class="position-relative">
         <img
@@ -132,76 +177,87 @@
                 class="img-fluid custom-responsive-img"
               />
             </div>
-            <div class="col-md-6 d-flex flex-column justify-content-between mt-md-2 order-md-1 ps-md-5 px-3 mb-5"
+            <div
+              class="col-md-6 d-flex flex-column justify-content-between mt-md-2 order-md-1 ps-md-5 px-3 mb-5"
             >
-              <h2 class="section-heading Maginia text-start">
-                Our Features
-              </h2>
-              <div id="text-carousel" class="owl-carousel owl-theme">
-                <div class="item">
-                  <h3 class="fw-bold mt-3">Luxurious Ambiance</h3>
-                  <p class="fw-lighter mt-md-4 mt-2">
-                    F Bar By FTV offers a one-of-a-kind unique experience with
-                    its ultra-luxurious interiors, with an intrinsic World-class
-                    quality to the look & feel of the place. An exotic
-                    destination to relish the depth of flavors of premium
-                    beverages ranging from Savory to Earthy.
-                  </p>
+              <h2 class="section-heading Maginia text-start">Our Features</h2>
+
+              <div>
+                <div id="text-carousel" class="owl-carousel owl-theme">
+                  <div class="item">
+                    <h3 class="fw-bold mt-3">Luxurious Ambiance</h3>
+                    <p class="fw-lighter mt-md-4 mt-2">
+                      F Bar By FTV offers a one-of-a-kind unique experience with
+                      its ultra-luxurious interiors, with an intrinsic
+                      World-class quality to the look & feel of the place. An
+                      exotic destination to relish the depth of flavors of
+                      premium beverages ranging from Savory to Earthy.
+                    </p>
+                  </div>
+
+                  <div class="item">
+                    <h3 class="fw-bold mt-3">Gourmet Delights</h3>
+                    <p class="fw-lighter mt-md-4 mt-2">
+                      Indulge in a wide variety of premium culinary options
+                      crafted by top chefs. F Bar By FTV brings gourmet food and
+                      signature experiences to your table, blending modern
+                      flavors with global inspirations.
+                    </p>
+                  </div>
+
+                  <div class="item">
+                    <h3 class="fw-bold mt-3">World-Class Mixology</h3>
+                    <p class="fw-lighter mt-md-4 mt-2">
+                      Sip on hand-crafted cocktails prepared by our expert
+                      mixologists. Each drink is a curated blend of top-shelf
+                      spirits and unique ingredients, promising an experience of
+                      taste and sophistication.
+                    </p>
+                  </div>
                 </div>
 
-                <div class="item">
-                  <h3 class="fw-bold mt-3">Gourmet Delights</h3>
-                  <p class="fw-lighter mt-md-4 mt-2">
-                    Indulge in a wide variety of premium culinary options
-                    crafted by top chefs. F Bar By FTV brings gourmet food and
-                    signature experiences to your table, blending modern flavors
-                    with global inspirations.
-                  </p>
-                </div>
-
-                <div class="item">
-                  <h3 class="fw-bold mt-3">World-Class Mixology</h3>
-                  <p class="fw-lighter mt-md-4 mt-2">
-                    Sip on hand-crafted cocktails prepared by our expert
-                    mixologists. Each drink is a curated blend of top-shelf
-                    spirits and unique ingredients, promising an experience of
-                    taste and sophistication.
-                  </p>
+                <!-- Progress Bar + Slide Counter -->
+                <div class="progress-bar-wrapper d-flex justify-content-start">
+                  <div class="progress-bar-container rounded-pill">
+                    <div class="progress-bar-fill rounded-pill"></div>
+                  </div>
+                  <div class="slide-counter">1/3</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <img
-            src="assets/img/features-hero.png"
-            alt="Hero"
-            class="img-fluid w-100"
-          />
+          src="assets/img/features-hero.png"
+          alt="Hero"
+          class="img-fluid w-100"
+        />
       </section>
 
       <section id="franchise">
         <div class="container">
           <h2 class="section-heading mb-0 Maginia mt-5">Our Franchise</h2>
-            <p>Introducing a new era of nighttime indulgence,</p>
-            <div class="container owl-carousel owl-theme mb-md-5 mb-4 owl-carousel-features">
-              <div class="item">
-                <img src="assets/img/Franchise-1.png" class="img-fluid">
-              </div>
-              <div class="item">
-                <img src="assets/img/Franchise-2.png" class="img-fluid">
-              </div>
-              <div class="item">
-                <img src="assets/img/Franchise-3.jpg" class="img-fluid">
-              </div>
+          <p>Introducing a new era of nighttime indulgence,</p>
+          <div
+            class="container owl-carousel owl-theme mb-md-5 mb-4 owl-carousel-features"
+          >
+            <div class="item">
+              <img src="assets/img/Franchise-1.png" class="img-fluid" />
             </div>
-            
+            <div class="item">
+              <img src="assets/img/Franchise-2.png" class="img-fluid" />
+            </div>
+            <div class="item">
+              <img src="assets/img/Franchise-3.jpg" class="img-fluid" />
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="blogs">
-        <div class="container px-md-0 ">
+        <div class="container px-md-0">
           <h2 class="section-heading mb-0 Maginia mt-5">Blogs</h2>
-          <div class="row w-100 d-flex ">
+          <div class="row w-100 d-flex">
             <div class="col-md-6 mb-5">
               <img
                 src="assets/img/blogs.png"
