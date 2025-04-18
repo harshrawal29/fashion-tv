@@ -1,0 +1,260 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-ExtraLight.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica-45/Helvetica-45.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Maginia";
+  src: url("../fonts/maginia/Maginia.otf") format("opentype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins";
+  background-color: #000;
+  color: #fff;
+}
+
+.Helvetica {
+  font-family: "Helvetica";
+}
+
+.Maginia {
+  font-family: "Maginia";
+}
+
+.navbar {
+  background-color: #0b0b0b;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 14px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  text-decoration: underline;
+}
+
+.contact-button {
+  padding: 10px 25px;
+  font-size: 14px;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    #dab157 0%,
+    #dab157 10%,
+    #dab157 20%,
+    #feecac 30%,
+    #fee499 40%,
+    #ffd777 50%,
+    #d9af63 60%,
+    #b78c3d 70%,
+    #936b25 85%,
+    #795315 100%
+  );
+  border: none;
+  border-radius: 25px;
+  color: #000;
+  transition: transform 0.2s;
+  box-shadow: 0 2px 5px rgba(255, 215, 0, 0.2);
+}
+
+.contact-button:hover {
+  transform: scale(1.05);
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* main */
+
+.section-heading {
+  background: linear-gradient(
+    90deg,
+    #dab157 0%,
+    #dab157 10%,
+    #dab157 20%,
+    #feecac 30%,
+    #fee499 40%,
+    #ffd777 50%,
+    #d9af63 60%,
+    #b78c3d 70%,
+    #936b25 80%,
+    #795315 100%
+  );
+  padding-bottom: 6px;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 86px;
+}
+
+.custom-responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.owl-carousel .item {
+  text-align: left;
+  /* padding: 20px 0; */
+}
+
+.owl-nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.owl-nav button.owl-prev,
+.owl-nav button.owl-next {
+  background: #b48c35;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 18px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.owl-nav button.owl-prev:hover,
+.owl-nav button.owl-next:hover {
+  background: #8b6c27;
+}
+
+.owl-dots {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.owl-dot span {
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.owl-dot.active span {
+  background: #b48c35;
+}
+
+.owl-nav {
+  all: unset;
+  display: flex;
+  gap: 10px;
+}
+
+/* Optional: Customize your arrows */
+.my-arrow {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.owl-nav button:hover,
+.owl-nav button:focus {
+  background: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.custom-nav-btn {
+font-size: 25px;
+}
+
+
+.feature-bg {
+  top: 10%;
+  left: 1%;
+  z-index: -1;
+}
+ 
+.introduction-bg {
+  top: 70%;
+  right: 0%;
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .custom-responsive-img {
+    max-width: 400px;
+  }
+
+  .section-heading {
+    font-size: 35px;
+    margin-bottom: 20px !important;
+  }
+}
+
+.disclaimer {
+  font-size: 13px;
+}
+
+/* footer */
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  font-size: 14px;
+  /* margin-top: 130px; */
+}
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #fff;
+}
+.footer .form-control {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.footer .social-icons i {
+  font-size: 20px;
+  color: #fff;
+  margin-right: 15px;
+}
+.footer-bottom {
+  margin-top: 30px;
+  padding-top: 20px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+form.d-flex input[type="email"]::placeholder {
+  color: white !important;
+  opacity: 1;
+}
+
+h6 {
+  font-weight: 300;
+  font-size: 24px;
+}
