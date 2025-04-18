@@ -182,15 +182,62 @@ body {
 }
 
 .feature-bg {
-  top: 10%;
+  top: 7%;
   left: 1%;
   z-index: -1;
 }
 
 .introduction-bg {
-  top: 70%;
+  top: 72%;
   right: 0%;
   z-index: -1;
+}
+
+/* Progress Bar + Counter */
+.progress-bar-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.progress-bar-container {
+  width: 20%;
+  height: 3px;
+  background: #fff;
+  margin-right: 10px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    #dab157 0%,
+    #dab157 10%,
+    #dab157 20%,
+    #feecac 30%,
+    #fee499 40%,
+    #ffd777 50%,
+    #d9af63 60%,
+    #b78c3d 70%,
+    #936b25 80%,
+    #795315 100%
+  );
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+.slide-counter {
+  white-space: nowrap;
+  min-width: 40px;
+  font-size: 14px;
+  color: #666;
+}
+
+.owl-nav button.owl-prev,
+.owl-nav button.owl-next {
+  all: unset;
 }
 @media (max-width: 768px) {
   .custom-responsive-img {
