@@ -44,7 +44,7 @@ $(document).ready(function () {
   }
 
   $(".owl-carousel").owlCarousel({
-    loop: true,
+    loop: false,
     margin: 20,
     nav: false,
     dots: false,
@@ -52,15 +52,15 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 1,
-        stagePadding: 40, // mobile: peeking next slide a bit
+        stagePadding: 40,
       },
       600: {
         items: 1,
-        stagePadding: 60, // adjust as you like
+        stagePadding: 60,
       },
       1000: {
         items: 2,
-        stagePadding: 150, // this will make half of 3rd item visible
+        stagePadding: 100,
         nav: false,
       },
     },

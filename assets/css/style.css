@@ -177,6 +177,19 @@ body {
   outline: none !important;
 }
 
+@media (min-width: 1000px) {
+  .owl-carousel-features .owl-stage-outer {
+    overflow: visible;
+    margin-left: -0px;
+    margin-right: -120px;
+  }
+
+  #franchise .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .custom-nav-btn {
   font-size: 25px;
 }
